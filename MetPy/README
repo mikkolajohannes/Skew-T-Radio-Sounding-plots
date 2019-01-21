@@ -1,6 +1,15 @@
 These programs requires Python package MetPy (https://unidata.github.io/MetPy/latest/index.html).
 
-Program fmi2skewt_metpy.py creates a Skew-T plot using FMI open radiosounding data.
-Data is available from Sodankylä (00 and 12 UTC) and Jokioinen (00, 06, 12 and 18 UTC).
+Program fmi2skewt_metpy.py creates a Skew-T plot using FMI open radiosounding data. Data is available from Sodankylä (station id = 101932, daily soundings made 00 and 12 UTC) and Jokioinen (station id = 101104, daily soundings made 00, 06, 12 and 18 UTC).
+
+Script requires few command line arguments: (script name), station id, time, file format
+For example:
+python fmi2skewt_metpy.py 101104 2018-08-27T12:00:00Z pdf
 
 Program noaa_comparison_skewt.py creates Skew-T plot using NOAA monthly mean temperatures (+ dew point temperatures) comparing one year to some period.
+
+You need sounding data from NOAA IGRA (Integrated Global Radio sounding Archive) https://www.ncdc.noaa.gov/data-access/weather-balloon/integrated-global-radiosonde-archive 
+Script require few command line arguments, for example comparing mean of May 2018 00UTC to mean of May 1981-2017 in Jokioinen:
+python noaa_comparison_skewt.py FIM00002963 00 5 2018 1981 2017
+
+Jokioinen = FIM00002963, Sodankylä = FIM00002836
