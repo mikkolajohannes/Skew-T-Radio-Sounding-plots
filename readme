@@ -3,7 +3,7 @@ Johannes Mikkola, 8/18
 This directory contains two version of codes for creating Skew-T diagrams. There's instructions for use on each script's comments.
 
 *NCL (http://ncl.ucar.edu/)
-    - creates Skew-T from FMI open data
+    - creates Skew-T from FMI open data using NCAR Command Language
 
 *MetPy (https://unidata.github.io/MetPy/latest/index.html).
     - creates Skew-T from FMI open data using Python package MetPy
