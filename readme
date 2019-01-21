@@ -1,0 +1,11 @@
+Johannes Mikkola, 8/18
+
+This directory contains two version of codes for creating Skew-T diagrams. There's instructions for use on each script's comments.
+
+*NCL (http://ncl.ucar.edu/)
+    - creates Skew-T from FMI open data
+
+*MetPy (https://unidata.github.io/MetPy/latest/index.html).
+    - creates Skew-T from FMI open data using Python package MetPy
+    - also a script for creating Skew-T diagram from NOAA's monthly mean temperatures
+      (for example: comparing mean temperatures May 2018 and May 1988-2018)
